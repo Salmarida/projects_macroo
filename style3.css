@@ -45,7 +45,7 @@ header {
 
 .navbar {
   display: flex;
-  margin-left: 30%;
+  margin-left: 35%;
 }
 .navbar a {
   font-size: 1rem;
@@ -54,7 +54,11 @@ header {
   font-weight: 500;
 }
 .navbar a:hover {
-  color: blanchedalmond;
+  color: white;
+}
+
+svg:hover {
+  color: #f3f5f1;
 }
 
 
@@ -279,6 +283,19 @@ footer {
   width: 100%;
   padding: 30px 0 0 20px;
   background: #435334;
+}
+.nav-footer {
+  display: flex;
+  margin-left: 30%;
+}
+.nav-footer a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+}
+.nav-footer a:hover {
+  color: #CEDEBD;
 }
 footer .end{
   display: flex;
