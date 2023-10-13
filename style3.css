@@ -45,6 +45,7 @@ header {
 
 .navbar {
   display: flex;
+  margin-left: 30%;
 }
 .navbar a {
   font-size: 1rem;
@@ -55,6 +56,7 @@ header {
 .navbar a:hover {
   color: blanchedalmond;
 }
+
 
 #menu-icon {
   font-size: 24px;
@@ -71,25 +73,24 @@ header {
   background: #cedebd;
 }
 .home-img {
-    width: 350px;
-    height: auto;
-    position: absolute;
-    left: 70%;
-    top: 30%;
-  }
-  .home-text span {
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: black;
-    margin-left: 60%;
-  }
-  .home-text p {
-    font-size: 20px;
-    margin-left: 15%;
-    position: absolute;
-  }
-  
+  width: 350px;
+  height: auto;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+}
+.home-text span {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  margin-left: 60%;
+}
+.home-text p {
+  font-size: 20px;
+  margin-left: 15%;
+  position: absolute;
+}
 
 .btn {
   padding: 10px 60px;
@@ -113,12 +114,13 @@ header {
 }
 
 .fitur span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 55px;
-    color: #435334;
-    font-family: Montserrat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #435334;
+  font-family: Montserrat;
 }
 
 .row {
@@ -126,19 +128,150 @@ header {
   padding: 20px;
   display: flex;
 }
-.row .col .img{
-    width: 70px;
-    position: relative;
-    top: 5px;
-    margin-left: 30%;
-  }
+.row .col .img {
+  width: 75px;
+  position: relative;
+  top: 5px;
+  margin-left: 20%;
+}
+.img-1 {
+  width: 85px;
+  position: relative;
+  top: 2px;
+  margin-left: 20%;
+}
+
+.img-2 {
+  width: 75px;
+  position: relative;
+  top: 5px;
+  margin-left: 10%;
+}
+.img-3 {
+  width: 75px;
+  position: relative;
+  top: 5px;
+  margin-left: 20%;
+}
+.img-4 {
+  width: 75px;
+  position: relative;
+  top: 5px;
+  margin-left: 20%;
+}
 .col {
   flex: 50%;
   padding: 40px;
-  height: 150px;
-  margin-left: 20px;
+  height: 200px;
+  margin-left: 30px;
   border-radius: 5%;
   background: #faf1e4;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*food*/
+.food {
+  width: 100%;
+  height: 80vh;
+  background: white;
+}
+
+.food h1 {
+  display: flex;
+  color: #435334;
+  justify-content: left;
+  font-size: 30px;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.food .menu_box {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  margin-right: 70%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.food .menu_box .menu_card {
+  width: 300px; 
+  height: 325px;
+  margin-left: 20%;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #CEDEBD;
+}
+
+.food .menu_box .menu_card .menu_image {
+  width: 300px;
+  height: 225px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.food .menu_box .menu_card .menu_image img {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.food .menu_box .menu_card .menu_image:hover img {
+  transform: scale(1.1);
+}
+
+.food .menu_box .menu_card .small_card {
+  width: 45px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: -240px;
+  right: -8px;
+  opacity: 0;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.food.menu_box .menu_card:hover .small_card {
+  position: relative;
+  top: -240px;
+  right: 20px;
+  opacity: 1;
+}
+.food .menu_box .menu_card .menu_info h2 {
+  width: 60%;
+  text-align: center;
+  margin: 5px auto 5px auto;
+  font-size: 25px;
+  color: #4e524a;
+}
+
+.food .menu_box .menu_card .menu_info p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+/*Community*/
+.community{
+  width: 100%;
+  height: 80vh;
+  background: white;
+}
+
+.community span{
+  display: flex;
+  font-weight: 800;
+  color: #435334;
+  justify-content: left;
+  font-size: 30px;
+  margin-left: 5%;
+  margin-bottom: 30px;
 }
 
 /*footer*/
@@ -147,10 +280,9 @@ footer {
   padding: 30px 0 0 20px;
   background: #435334;
 }
-footer .end {
+footer .end{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding: 15px;
   color: white;
 }
